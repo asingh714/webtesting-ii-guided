@@ -38,7 +38,7 @@ describe("<App />", () => {
     const button = getByText(/greet/i);
 
     fireEvent.click(button);
-    getByText(/hello web XVII/i)
+    getByText(/hello team/i)
   })
 
   it("says goodbye", () => {
@@ -47,6 +47,6 @@ describe("<App />", () => {
     const byebutton = getByText(/bye/i);
 
     fireEvent.click(byebutton);
-    getByText(/bye web XVII/i)
+    getByText(/bye team/i)
   })
 })

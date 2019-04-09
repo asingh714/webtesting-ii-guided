@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Greeting from "../Greeting/Greeting";
 import './App.css';
 
 class App extends Component {
@@ -9,13 +9,13 @@ class App extends Component {
 
   greet = () => {
     this.setState({
-      greeting: "hello web XVII"
+      greeting: "hello team"
     })
   }
 
   bye = () => {
     this.setState({
-      greeting: "Bye web XVII"
+      greeting: "Bye team"
     })
   }
 
@@ -26,8 +26,7 @@ class App extends Component {
         <h1>Hello World</h1>
         <button onClick={this.greet}>Greet</button>
         <button onClick={this.bye}>Bye</button>
-
-        <div>{this.state.greeting}</div>
+        <Greeting message={this.state.greeting}/> 
       </>
     );
   }
